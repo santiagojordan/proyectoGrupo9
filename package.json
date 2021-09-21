@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/santiagojordan/proyectoGrupo9/issues"
   },
-  "homepage": "https://github.com/santiagojordan/proyectoGrupo9#readme"
+  "homepage": "https://github.com/santiagojordan/proyectoGrupo9#readme",
+  "dependencies": {
+    "mime": "^2.5.2"
+  }
 }
