@@ -62,12 +62,13 @@
             <div class="uk-container uk-container-large uk-flex">
                 <form action="">
                     <h2>Nuevo Post</h2>
-                    <div>Insertar Imagen:</div>
-                    <h3><div><textarea name="Caption" id="" cols="15" rows="1">Pie de foto</textarea></div></h3>
-                    <button type="submit">Subir Posteo</button>
-
-
+                    <form action="/action_page.php">
+                        <label for="img">Elegir imagen:</label>
+                        <input type="file" id="img" name="img" accept="image/*">
+                        <input type="submit">
+                      </form>
                 </form>
+                
 
             </div>
         </div>
