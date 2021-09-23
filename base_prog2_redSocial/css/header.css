@@ -7,6 +7,9 @@ header{
     height: 55px;
     padding-top: 10px;
 }
+header.uk-background-primary{
+    background-color: black;
+}
 header section{
     height: 100%;
 }
