@@ -4,8 +4,17 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var agregarPostRouter = require('./routes/agregarPost');
+var detallePostRouter = require('./routes/detallePost');
+var detalleUsuarioRouter = require('./routes/detalleUsuario');
+var loginRouter = require('./routes/login');
+var miPerfilRouter = require('./routes/miPerfil');
+var registracionRouter = require('./routes/registracion');
+
+
 
 var app = express();
 
