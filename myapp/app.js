@@ -20,7 +20,7 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs'); //Aca en estas dos lineas le estamos diciendo a express que busque nuestras vistas, y que nuestras vistas van a trabajar con EJS.
 
 app.use(logger('dev'));
 app.use(express.json());
