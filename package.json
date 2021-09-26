@@ -2,7 +2,7 @@
   "name": "proyectogrupo9",
   "version": "1.0.0",
   "description": "Proyecto Integrador",
-  "main": "/myapp",
+  "main": "index.ejs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
