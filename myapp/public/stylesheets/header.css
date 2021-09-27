@@ -52,6 +52,7 @@ header .uk-navbar-right a{
 header div.uk-navbar-center ul li:nth-last-child(1){
     border-right: none;
 }
+
 header nav form input, header nav form ::placeholder, header nav form span{
     color: white !important;
 }

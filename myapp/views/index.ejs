@@ -7,15 +7,18 @@
         <div class="uk-section uk-section-small">
             <div class="uk-container uk-container-large uk-flex">
                 <section id="posts" class="uk-flex uk-flex-middle uk-flex-center uk-flex-column uk-child-width-1-2 uk-width-1-1">
-                    
-                    
+                   
+                   
+
+
+
                     <article class="post uk-card-default uk-flex uk-flex-column">
                         <div class="info-usuario uk-flex ">
                             <div class="fotoPerfil">
                                 <img src="../<%=usuarios[0].fotoPerfil%>" alt="">
                             </div>
                             <h4><a href="/detalle-usuario"><%=usuarios[0].nombre%></a></h4>
-                            
+                           
                         </div>
                         <div class="post-body uk-flex uk-flex-center">
                             <a href="/detalle-post">
@@ -31,7 +34,7 @@
                             </ul>
                             <div class="post-pie uk-flex">
                                 <h5 class="uk-width-1-6"><a href="/detalle-usuario"><%=posts[0].username%></a></h5>
-                                <p class="uk-width-5-6"><%=posts[0].pie_de_foto%></p>
+                                <p class="uk-width-5-6 pieDeFoto"><%=posts[0].pie_de_foto%></p>
                             </div>
                         </div>
                         <div class="post-comentarios">
@@ -49,16 +52,18 @@
                             </ul>
                         </div>
                     </article>
-
-
-
+  
+  
+  
+  
+  
                     <article class="post uk-card-default uk-flex uk-flex-column">
                         <div class="info-usuario uk-flex ">
-                            <div class="fotoPerfil"> 
+                            <div class="fotoPerfil">
                                 <img src="../<%=usuarios[1].fotoPerfil%>" alt="">
                             </div>
-                            <h4><a href="/detalle-usuario"><%=posts[1].username%></a></h4>
-                    
+                            <h4><a href="/detalle-usuario"><%=usuarios[1].nombre%></a></h4>
+                   
                         </div>
                         <div class="post-body uk-flex uk-flex-center">
                             <a href="/detalle-post">
@@ -74,7 +79,7 @@
                             </ul>
                             <div class="post-pie uk-flex">
                                 <h5 class="uk-width-1-6"><a href="/detalle-usuario"><%=posts[1].username%></a></h5>
-                                <p class="uk-width-5-6"><%=posts[1].pie_de_foto%></p>
+                                <p class="uk-width-5-6 pieDeFoto"><%=posts[1].pie_de_foto%></p>
                             </div>
                         </div>
                         <div class="post-comentarios">
@@ -82,26 +87,28 @@
                             <ul>
                                 <li>
                                     <a href="/detalle-usuario"><%=usuarios[3].nombre%></a>
-                                    <p><%=comentario[3].comentario%></p>
+                                    <p><%=comentario[11].comentario%></p>
                                 </li>
                                 <li>
                                     <a href="/detalle-usuario"><%=usuarios[4].nombre%></a>
-                                    <p><%=comentario[4].comentario%></p>
+                                    <p><%=comentario[16].comentario%></p>
                                 </li>
                                 <a href="">Ver más...</a>
                             </ul>
                         </div>
                     </article>
+  
+  
 
 
-
+  
                     <article class="post uk-card-default uk-flex uk-flex-column">
                         <div class="info-usuario uk-flex ">
                             <div class="fotoPerfil">
                                 <img src="../<%=usuarios[2].fotoPerfil%>" alt="">
                             </div>
-                            <h4><a href="/detalle-usuario"><%=posts[2].username%></a></h4>
-                    
+                            <h4><a href="/detalle-usuario"><%=usuarios[2].nombre%></a></h4>
+                   
                         </div>
                         <div class="post-body uk-flex uk-flex-center">
                             <a href="/detalle-post">
@@ -117,34 +124,36 @@
                             </ul>
                             <div class="post-pie uk-flex">
                                 <h5 class="uk-width-1-6"><a href="/detalle-usuario"><%=posts[2].username%></a></h5>
-                                <p class="uk-width-5-6"><%=posts[2].pie_de_foto%></p>
+                                <p class="uk-width-5-6 pieDeFoto"><%=posts[2].pie_de_foto%></p>
                             </div>
                         </div>
                         <div class="post-comentarios">
                             <h6>Comentarios</h6>
                             <ul>
                                 <li>
-                                    <a href="/detalle-usuario"><%=posts[0].username%></a>
-                                    <p><%=posts[2].comment1%></p>
+                                    <a href="/detalle-usuario"><%=usuarios[3].nombre%></a>
+                                    <p><%=comentario[4].comentario%></p>
                                 </li>
                                 <li>
-                                    <a href="/detalle-usuario"><%=posts[1].username%></a>
-                                    <p><%=posts[2].comment2%></p>
+                                    <a href="/detalle-usuario"><%=usuarios[4].nombre%></a>
+                                    <p><%=comentario[18].comentario%></p>
                                 </li>
                                 <a href="">Ver más...</a>
                             </ul>
                         </div>
                     </article>
-                   
-                   
-                   
+                  
+                  
+
+
+                  
                     <article class="post uk-card-default uk-flex uk-flex-column">
                         <div class="info-usuario uk-flex ">
                             <div class="fotoPerfil">
                                 <img src="../<%=usuarios[3].fotoPerfil%>" alt="">
                             </div>
-                            <h4><a href="/detalle-usuario"><%=posts[3].username%></a></h4>
-                    
+                            <h4><a href="/detalle-usuario"><%=usuarios[3].nombre%></a></h4>
+                   
                         </div>
                         <div class="post-body uk-flex uk-flex-center">
                             <a href="/detalle-post">
@@ -160,34 +169,36 @@
                             </ul>
                             <div class="post-pie uk-flex">
                                 <h5 class="uk-width-1-6"><a href="/detalle-usuario"><%=posts[3].username%></a></h5>
-                                <p class="uk-width-5-6"><%=posts[3].pie_de_foto%></p>
+                                <p class="uk-width-5-6 pieDeFoto"><%=posts[3].pie_de_foto%></p>
                             </div>
                         </div>
                         <div class="post-comentarios">
                             <h6>Comentarios</h6>
                             <ul>
                                 <li>
-                                    <a href="/detalle-usuario"><%=posts[0].username%></a>
-                                    <p><%=posts[3].comment1%></p>
+                                    <a href="/detalle-usuario"><%=usuarios[1].nombre%></a>
+                                    <p><%=comentario[5].comentario%></p>
                                 </li>
                                 <li>
-                                    <a href="/detalle-usuario"><%=posts[2].username%></a>
-                                    <p><%=posts[3].comment2%></p>
+                                    <a href="/detalle-usuario"><%=usuarios[4].nombre%></a>
+                                    <p><%=comentario[6].comentario%></p>
                                 </li>
                                 <a href="">Ver más...</a>
                             </ul>
                         </div>
                     </article>
-                    
-                    
-                    
+                   
+                   
+                   
+
+
                     <article class="post uk-card-default uk-flex uk-flex-column">
                         <div class="info-usuario uk-flex ">
                             <div class="fotoPerfil">
                                 <img src="../<%=usuarios[4].fotoPerfil%>" alt="">
                             </div>
-                            <h4><a href="/detalle-usuario"><%=posts[4].username%></a></h4>
-                    
+                            <h4><a href="/detalle-usuario"><%=usuarios[4].nombre%></a></h4>
+                   
                         </div>
                         <div class="post-body uk-flex uk-flex-center">
                             <a href="/detalle-post">
@@ -203,38 +214,40 @@
                             </ul>
                             <div class="post-pie uk-flex">
                                 <h5 class="uk-width-1-6"><a href="/detalle-usuario"><%=posts[4].username%></a></h5>
-                                <p class="uk-width-5-6"><%=posts[4].pie_de_foto%></p>
+                                <p class="uk-width-5-6 pieDeFoto"><%=posts[4].pie_de_foto%></p>
                             </div>
                         </div>
                         <div class="post-comentarios">
                             <h6>Comentarios</h6>
                             <ul>
                                 <li>
-                                    <a href="/detalle-usuario"><%=posts[1].username%></a>
-                                    <p><%=posts[4].comment1%></p>
+                                    <a href="/detalle-usuario"><%=usuarios[3].nombre%></a>
+                                    <p><%=comentario[7].comentario%></p>
                                 </li>
                                 <li>
-                                    <a href="/detalle-usuario"><%=posts[0].username%></a>
-                                    <p><%=posts[4].comment2%></p>
+                                    <a href="/detalle-usuario"><%=usuarios[2].nombre%></a>
+                                    <p><%=comentario[8].comentario%></p>
                                 </li>
                                 <a href="/">Ver más...</a>
                             </ul>
                         </div>
-                    </article>    
-                    
-                    
+                    </article>   
+                   
+                   
 
+
+  
                     <article class="post uk-card-default uk-flex uk-flex-column">
                         <div class="info-usuario uk-flex ">
                             <div class="fotoPerfil">
-                                <img src="../<%=usuarios[4].fotoPerfil%>" alt="">
+                                <img src="../<%=usuarios[0].fotoPerfil%>" alt="">
                             </div>
-                            <h4><a href="/detalle-usuario"><%=posts[4].username%></a></h4>
-                    
+                            <h4><a href="/detalle-usuario"><%=usuarios[3].nombre%></a></h4>
+                   
                         </div>
                         <div class="post-body uk-flex uk-flex-center">
                             <a href="/detalle-post">
-                                <img src="../<%=posts[4].foto%>" alt="">
+                                <img src="../<%=posts[5].foto%>" alt="">
                             </a>
                         </div>
                         <div class="post-reacciones">
@@ -245,39 +258,41 @@
                                 </li>
                             </ul>
                             <div class="post-pie uk-flex">
-                                <h5 class="uk-width-1-6"><a href="/detalle-usuario"><%=posts[4].username%></a></h5>
-                                <p class="uk-width-5-6"><%=posts[4].pie_de_foto%></p>
+                                <h5 class="uk-width-1-6"><a href="/detalle-usuario"><%=posts[5].username%></a></h5>
+                                <p class="uk-width-5-6 pieDeFoto"><%=posts[5].pie_de_foto%></p>
                             </div>
                         </div>
                         <div class="post-comentarios">
                             <h6>Comentarios</h6>
                             <ul>
                                 <li>
-                                    <a href="/detalle-usuario"><%=posts[1].username%></a>
-                                    <p><%=posts[5].comment1%></p>
+                                    <a href="/detalle-usuario"><%=usuarios[4].nombre%></a>
+                                    <p><%=comentario[19].comentario%></p>
                                 </li>
                                 <li>
-                                    <a href="/detalle-usuario"><%=posts[0].username%></a>
-                                    <p><%=posts[4].comment2%></p>
+                                    <a href="/detalle-usuario"><%=usuarios[2].nombre%></a>
+                                    <p><%=comentario[15].comentario%></p>
                                 </li>
                                 <a href="/">Ver más...</a>
                             </ul>
                         </div>
-                    </article>    
-
+                    </article>   
+  
+  
+  
 
 
                     <article class="post uk-card-default uk-flex uk-flex-column">
                         <div class="info-usuario uk-flex ">
                             <div class="fotoPerfil">
-                                <img src="../<%=usuarios[4].fotoPerfil%>" alt="">
+                                <img src="../<%=usuarios[0].fotoPerfil%>" alt="">
                             </div>
-                            <h4><a href="/detalle-usuario"><%=posts[4].username%></a></h4>
-                    
+                            <h4><a href="/detalle-usuario"><%=usuarios[2].nombre%></a></h4>
+                   
                         </div>
                         <div class="post-body uk-flex uk-flex-center">
                             <a href="/detalle-post">
-                                <img src="../<%=posts[4].foto%>" alt="">
+                                <img src="../<%=posts[6].foto%>" alt="">
                             </a>
                         </div>
                         <div class="post-reacciones">
@@ -288,33 +303,173 @@
                                 </li>
                             </ul>
                             <div class="post-pie uk-flex">
-                                <h5 class="uk-width-1-6"><a href="/detalle-usuario"><%=posts[4].username%></a></h5>
-                                <p class="uk-width-5-6"><%=posts[4].pie_de_foto%></p>
+                                <h5 class="uk-width-1-6"><a href="/detalle-usuario"><%=posts[6].username%></a></h5>
+                                <p class="uk-width-5-6 pieDeFoto"><%=posts[6].pie_de_foto%></p>
                             </div>
                         </div>
                         <div class="post-comentarios">
                             <h6>Comentarios</h6>
                             <ul>
                                 <li>
-                                    <a href="/detalle-usuario"><%=posts[1].username%></a>
-                                    <p><%=posts[4].comment1%></p>
+                                    <a href="/detalle-usuario"><%=usuarios[3].nombre%></a>
+                                    <p><%=comentario[28].comentario%></p>
                                 </li>
                                 <li>
-                                    <a href="/detalle-usuario"><%=posts[0].username%></a>
-                                    <p><%=posts[4].comment2%></p>
+                                    <a href="/detalle-usuario"><%=usuarios[4].nombre%></a>
+                                    <p><%=comentario[29].comentario%></p>
                                 </li>
                                 <a href="/">Ver más...</a>
                             </ul>
                         </div>
-                    </article>    
-        
+                    </article>
+                   
+                   
+  
+
+
+                    <article class="post uk-card-default uk-flex uk-flex-column">
+                        <div class="info-usuario uk-flex ">
+                            <div class="fotoPerfil">
+                                <img src="../<%=usuarios[0].fotoPerfil%>" alt="">
+                            </div>
+                            <h4><a href="/detalle-usuario"><%=usuarios[1].nombre%></a></h4>
+                   
+                        </div>
+                        <div class="post-body uk-flex uk-flex-center">
+                            <a href="/detalle-post">
+                                <img src="../<%=posts[7].foto%>" alt="">
+                            </a>
+                        </div>
+                        <div class="post-reacciones">
+                            <ul class="post-icons uk-flex uk-flex-between">
+                                <li><span class="" uk-icon="icon:heart; ratio: 1.3"></span>
+                                </li>
+                                <li><span class="" uk-icon="icon:comments; ratio: 1.3"></span>
+                                </li>
+                            </ul>
+                            <div class="post-pie uk-flex">
+                                <h5 class="uk-width-1-6"><a href="/detalle-usuario"><%=posts[7].username%></a></h5>
+                                <p class="uk-width-5-6 pieDeFoto"><%=posts[7].pie_de_foto%></p>
+                            </div>
+                        </div>
+                        <div class="post-comentarios">
+                            <h6>Comentarios</h6>
+                            <ul>
+                                <li>
+                                    <a href="/detalle-usuario"><%=usuarios[2].nombre%></a>
+                                    <p><%=comentario[12].comentario%></p>
+                                </li>
+                                <li>
+                                    <a href="/detalle-usuario"><%=usuarios[4].nombre%></a>
+                                    <p><%=comentario[39].comentario%></p>
+                                </li>
+                                <a href="/">Ver más...</a>
+                            </ul>
+                        </div>
+                    </article>
+
+
+
+
+
+                    <article class="post uk-card-default uk-flex uk-flex-column">
+                        <div class="info-usuario uk-flex ">
+                            <div class="fotoPerfil">
+                                <img src="../<%=usuarios[0].fotoPerfil%>" alt="">
+                            </div>
+                            <h4><a href="/detalle-usuario"><%=usuarios[0].nombre%></a></h4>
+                   
+                        </div>
+                        <div class="post-body uk-flex uk-flex-center">
+                            <a href="/detalle-post">
+                                <img src="../<%=posts[8].foto%>" alt="">
+                            </a>
+                        </div>
+                        <div class="post-reacciones">
+                            <ul class="post-icons uk-flex uk-flex-between">
+                                <li><span class="" uk-icon="icon:heart; ratio: 1.3"></span>
+                                </li>
+                                <li><span class="" uk-icon="icon:comments; ratio: 1.3"></span>
+                                </li>
+                            </ul>
+                            <div class="post-pie uk-flex">
+                                <h5 class="uk-width-1-6"><a href="/detalle-usuario"><%=posts[8].username%></a></h5>
+                                <p class="uk-width-5-6 pieDeFoto"><%=posts[8].pie_de_foto%></p>
+                            </div>
+                        </div>
+                        <div class="post-comentarios">
+                            <h6>Comentarios</h6>
+                            <ul>
+                                <li>
+                                    <a href="/detalle-usuario"><%=usuarios[1].nombre%></a>
+                                    <p><%=comentario[24].comentario%></p>
+                                </li>
+                                <li>
+                                    <a href="/detalle-usuario"><%=usuarios[3].nombre%></a>
+                                    <p><%=comentario[36].comentario%></p>
+                                </li>
+                                <a href="/">Ver más...</a>
+                            </ul>
+                        </div>
+                    </article>
+
+
+
+
+
+                    <article class="post uk-card-default uk-flex uk-flex-column">
+                        <div class="info-usuario uk-flex ">
+                            <div class="fotoPerfil">
+                                <img src="../<%=usuarios[0].fotoPerfil%>" alt="">
+                            </div>
+                            <h4><a href="/detalle-usuario"><%=usuarios[4].nombre%></a></h4>
+                   
+                        </div>
+                        <div class="post-body uk-flex uk-flex-center">
+                            <a href="/detalle-post">
+                                <img src="../<%=posts[9].foto%>" alt="">
+                            </a>
+                        </div>
+                        <div class="post-reacciones">
+                            <ul class="post-icons uk-flex uk-flex-between">
+                                <li><span class="" uk-icon="icon:heart; ratio: 1.3"></span>
+                                </li>
+                                <li><span class="" uk-icon="icon:comments; ratio: 1.3"></span>
+                                </li>
+                            </ul>
+                            <div class="post-pie uk-flex">
+                                <h5 class="uk-width-1-6"><a href="/detalle-usuario"><%=posts[9].username%></a></h5>
+                                <p class="uk-width-5-6 pieDeFoto"><%=posts[9].pie_de_foto%></p>
+                            </div>
+                        </div>
+                        <div class="post-comentarios">
+                            <h6>Comentarios</h6>
+                            <ul>
+                                <li>
+                                    <a href="/detalle-usuario"><%=usuarios[4].nombre%></a>
+                                    <p><%=comentario[37].comentario%></p>
+                                </li>
+                                <li>
+                                    <a href="/detalle-usuario"><%=usuarios[3].nombre%></a>
+                                    <p><%=comentario[35].comentario%></p>
+                                </li>
+                                <a href="/">Ver más...</a>
+                            </ul>
+                        </div>
+                    </article>
+
+
+
+
+       
                 </section>
-
+  
             </div>
         </div>
-        
+       
     </main>
-
+ 
+ 
     <%- include("./partials/footer") %> 
 
 </body>

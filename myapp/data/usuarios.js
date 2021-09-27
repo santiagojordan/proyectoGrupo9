@@ -1,14 +1,14 @@
 const usuarios = {
    lista: [
        {
-           id: 1,
-           nombre: "Ana",
-           apellido: "Folmer",
-           email: "anafolmer@gmail.com",
-           contrasenia: 1265,
-           fotoPerfil: "/images/logo.png",
-           fecha: 2021-08-30,
-           telefono: 343620957    
+        id: 1,
+        nombre: "Ana",
+        apellido: "Folmer",
+        email: "anafolmer@gmail.com",
+        contrasenia: 1265,
+        fotoPerfil: "/images/fUsuario/fmujer.jpg",
+        fecha: 2021-08-30,
+        telefono: 343620957    
        },
        {
         id: 2,
@@ -16,7 +16,7 @@ const usuarios = {
         apellido: "Silva",
         email: "maurosilva@gmail.com",
         contrasenia: 2303,
-        fotoPerfil: "/images/logo.png",
+        fotoPerfil: "/images/fUsuario/fhombre.jpg",
         fecha: 2021-09-01,
         telefono: 343487109   
        },
@@ -26,7 +26,7 @@ const usuarios = {
         apellido: "Schmidt",
         email: "martinschmidt@gmail.com",
         contrasenia: 4537,
-        fotoPerfil: "/images/logo.png",
+        fotoPerfil: "/images/fUsuario/hombre.jpg",
         fecha: 2021-09-05,
         telefono: 343290716    
        },
@@ -36,7 +36,7 @@ const usuarios = {
         apellido: "Lell",
         email: "carolinalell@gmail.com",
         contrasenia: 1117,
-        fotoPerfil: "/images/logo.png",
+        fotoPerfil: "/images/fUsuario/mujer.jpg",
         fecha: 2021-08-31,
         telefono: 343265487    
        },
@@ -46,7 +46,7 @@ const usuarios = {
         apellido: "Gorostiaga",
         email: "murielgorostiaga@gmail.com",
         contrasenia: 0456,
-        fotoPerfil: "/images/logo.png",
+        fotoPerfil: "/images/fUsuario/fmujer.jpg",
         fecha: 2021-09-10,
         telefono: 343653448    
        }
