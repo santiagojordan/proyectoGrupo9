@@ -6,4 +6,8 @@ router.get('/login', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+let loginController = require('../controllers/loginController')
+
+router.get('/', loginController.index);
+
 module.exports = router;

@@ -9,7 +9,8 @@ const indexController = {
         res.render('index', {
             title: "instaCars",
             posts: dataPosteos.lista,
-            usuario: dataUsuarios.lista,
+            usuarios: dataUsuarios.lista,
+            comentario: dataComentarios.lista
         });
     },
 
