@@ -49,8 +49,61 @@ const usuarios = {
         fotoPerfil: "/images/fUsuario/fmujer.jpg",
         fecha: 2021-09-10,
         telefono: 343653448    
-       }
+       },
+       {
+        id: 6,
+        nombre: "Santiago",
+        apellido: "Jordan",
+        email: "santiagojordan@gmail.com",
+        contrasenia: 0456,
+        fotoPerfil: "/images/fUsuario/fhombre.jpg",
+        fecha: 2021-09-10,
+        telefono: 343653448    
+       },
+       {
+        id: 7,
+        nombre: "Gian",
+        apellido: "Graciano",
+        email: "giangraciano@gmail.com",
+        contrasenia: 0456,
+        fotoPerfil: "/images/fUsuario/fhombre.jpg",
+        fecha: 2021-09-10,
+        telefono: 343653448    
+       },
+       {
+        id: 8,
+        nombre: "Genaro",
+        apellido: "Gandolfo",
+        email: "ggandolfo@gmail.com",
+        contrasenia: 0456,
+        fotoPerfil: "/images/fUsuario/hombre.jpg",
+        fecha: 2021-09-10,
+        telefono: 343653448    
+       },
+       {
+        id: 9,
+        nombre: "Tomas",
+        apellido: "Jarsun",
+        email: "tomasjarsun@gmail.com",
+        contrasenia: 0456,
+        fotoPerfil: "/images/fUsuario/fhombre.jpg",
+        fecha: 2021-09-10,
+        telefono: 343653448    
+       },
+       {
+        id: 10,
+        nombre: "Mika",
+        apellido: "Stupnik",
+        email: "mstupnik@gmail.com",
+        contrasenia: 0456,
+        fotoPerfil: "/images/fUsuario/fhombre.jpg",
+        fecha: 2021-09-10,
+        telefono: 343653448    
+       },
+
+
     ]
+
 }
 
 module.exports = usuarios;

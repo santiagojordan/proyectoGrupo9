@@ -3,12 +3,13 @@ const dataPosteos = require ("../data/posteos");
 const dataComentarios = require ("../data/comentarios");
 
 const usersController = {
-    index: (req,res) => {
-        console.log ("El usuario ha sido registrado.");
-        res.render ("index", {style: "index", logueado: true, usuario: dataUsuarios, verMas: false,
-            posteo: dataPosteos, usuarioComentario: dataComentarios
-    });
+        index: function(req, res, next) {
+            return res.render('usersController', {
+                usuarios: dataUsuarios.lista,
+                comentario: dataComentarios.lista,
+              });
+          }
     }
-}
+
 
 module.exports = usersController;

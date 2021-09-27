@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/registracion', function(req, res, next) {
-  
-});
+let registracionController = require('../controllers/registracionController')
+
+
+router.get('/', registracionController.index);
 
 module.exports = router;

@@ -4,7 +4,7 @@ const dataComentarios = require ("../data/comentarios");
 
 const registracionController = {
     index: (req,res) => {
-        
+        return res.render('registracion', {  });
     
     }
 }

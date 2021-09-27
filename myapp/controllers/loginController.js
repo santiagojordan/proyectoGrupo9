@@ -4,7 +4,7 @@ const dataComentarios = require ("../data/comentarios");
 
 const loginController = {
     index: (req,res) => {
-        
+        return res.render('login', {  });
     
     }
 }
