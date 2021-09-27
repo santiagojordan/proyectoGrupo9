@@ -24,7 +24,7 @@ article.post div.post-body{
 }
 .post-body a{
     display: inline-block;
-    width: 100%;
+    width: 80%;
     text-align: center;
 }
 
@@ -65,5 +65,10 @@ article.post div.post-comentarios ul li a{
 }
 article.post div.post-comentarios ul li p{
     margin: 0 5px;
+}
+
+.fotoPerfil{
+    height: 10%;
+    width: 10%;
 }
 

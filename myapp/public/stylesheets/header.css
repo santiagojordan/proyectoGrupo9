@@ -4,12 +4,11 @@
 
 
 header{
-    height: 55px;
+    height: 90px;
     padding-top: 10px;
+    background-color: black;
 }
-.negroFondo{
-    background-color: black !important;
-}
+
 header section{
     height: 100%;
 }
@@ -19,6 +18,7 @@ header section nav{
 header nav ul li a,
 header a{
     color: white;
+    
 }
 header nav ul li a:hover,
 header a:hover{
@@ -30,7 +30,7 @@ header a:hover{
 }
 .logo a{
     font-family: 'Fjalla One', sans-serif;
-    color: white;
+    color: red;
 }
 .logo a:hover {
     text-decoration: none;
