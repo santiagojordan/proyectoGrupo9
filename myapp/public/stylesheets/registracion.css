@@ -1,7 +1,7 @@
 .formulario{
-   border: 2px solid;
    border-radius: 10px;
    background-color: black;
+   border: 2px solid red;
 }
 
 .formulario div {
