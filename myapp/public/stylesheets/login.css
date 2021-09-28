@@ -2,23 +2,36 @@
     display: block;
     margin-top: 5% ;
     margin-bottom: 5%;
-    border: 2px solid;
+    border: 2px solid red;
     border-radius: 10px;
+    background-color: black;
 }
+
+.login div {
+    padding: 20px;
+    background-color: black;
+    border: 0.5px solid red;
+}
+
 .titulo{
     text-align: center;
+    color: white;
 }
+
 .input{
     display: block;
      margin-left: auto;
      margin-right: auto;
  }
+
  .log{
-        display: block;
-        font-size: 25px;
-        margin: 10px 10px;
-        border-radius: 10px;
+    display: block;
+    font-size: 25px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    color: white;
  }
+
 .boton{
     display: block;
     width: 100%;
@@ -31,3 +44,7 @@
     background-color: red;
     color: white;
   }
+
+  .fondo{
+    height: 100%;
+}
