@@ -1,14 +1,13 @@
-const dataUsuarios = require ("../data/usuarios");
-const dataPosteos = require ("../data/posteos");
-const dataComentarios = require ("../data/comentarios");
+const dataPost = require ('../data/posteos')
+const dataUser = require ('../data/usuarios')
 
 const miPerfilController = {
-    index: function (req,res) {
-        res.render("miPerfil", {users: data.lista, listaPosts: posts.lista})
-    },
-    edit: function (req,res) {
-        res.render("editarPerfil")
-    }
+    index: function(req, res, next) {
+        return res.render('miPerfil', {
+          posts: dataPost.list,
+          usuario: dataUser.list
+          });
+      }
 }
 
-module.exports = miPerfilController;
+module.exports = miPerfilController

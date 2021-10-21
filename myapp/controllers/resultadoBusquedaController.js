@@ -1,12 +1,11 @@
-const dataUsuarios = require ("../data/usuarios");
-const dataPosteos = require ("../data/posteos");
-const dataComentarios = require ("../data/comentarios");
-
 const resultadoBusquedaController = {
-    index: (req,res) => {
-        
-    
-    }
+    index: function(req, res, next) {
+      let result = req.query.result;
+        return res.render('resultadoBusqueda', {
+          busqueda:result
+
+         });
+      }
 }
 
-module.exports = resultadoBusquedaController;
+module.exports = resultadoBusquedaController

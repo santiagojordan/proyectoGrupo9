@@ -1,20 +1,13 @@
-const dataUsuarios = require ("../data/usuarios");
-const dataPosteos = require ("../data/posteos");
-const dataComentarios = require ("../data/comentarios");
-
-
-
+const dataPost = require ('../data/posteos')
+const dataUser = require ('../data/usuarios')
 
 const indexController = {
     index: function(req, res, next) {
-        res.render('index', {
-            title: "instaCars",
-            posts: dataPosteos.lista,
-            usuarios: dataUsuarios.lista,
-            comentario: dataComentarios.lista,
+        return res.render('index', {
+          posts: dataPost.list,
+          usuario: dataUser.list
         });
     },
-
 }
 
-module.exports = indexController;
+module.exports = indexController

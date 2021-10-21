@@ -1,12 +1,7 @@
-const dataUsuarios = require ("../data/usuarios");
-const dataPosteos = require ("../data/posteos");
-const dataComentarios = require ("../data/comentarios");
-
 const loginController = {
-    index: (req,res) => {
+    index: function(req, res, next) {
         return res.render('login', {  });
-    
-    }
+      }
 }
 
-module.exports = loginController;
+module.exports = loginController

@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/detallePost', function(req, res, next) {
-  
-});
+let detallePostController = require('../controllers/detallePostController')
 
-module.exports = router;
+
+router.get('/:id?', detallePostController.index);
+
+
+
+module.exports = router
