@@ -1,5 +1,5 @@
-const dataPost = require ('../data/posts')
-const dataUser = require ('../data/usuario')
+const dataPost = require ('../data/posteos')
+const dataUser = require ('../data/usuarios')
 
 const detallePostController = {
     index: function(req, res, next) {

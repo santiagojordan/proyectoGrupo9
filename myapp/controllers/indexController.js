@@ -5,7 +5,7 @@ const indexController = {
     index: function(req, res, next) {
         return res.render('index', {
           posts: dataPost.list,
-          usuario: dataUser.list
+          usuarios: dataUser.list
         });
     },
 }

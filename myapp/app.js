@@ -6,13 +6,15 @@ var logger = require('morgan');
 
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var agregarPostRouter = require('./routes/agregarPost');
 var detallePostRouter = require('./routes/detallePost');
-var detalleUsuarioRouter = require('./routes/detalleUsuario');
+var detalleUserRouter = require('./routes/detalleUser');
 var loginRouter = require('./routes/login');
 var miPerfilRouter = require('./routes/miPerfil');
 var registracionRouter = require('./routes/registracion');
+var editarPerfilRouter = require('./routes/editarPerfil')
+var resultadoBusquedaRouter = require('./routes/resultadoBusqueda')
+
 
 
 
@@ -31,14 +33,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/index', indexRouter);
+app.use('/detalleUser', detalleUserRouter);
 app.use("/agregarPost", agregarPostRouter);
 app.use("/detallePost", detallePostRouter);
-app.use("/detalleUsuario", detalleUsuarioRouter);
+app.use("/detalleUser", detalleUserRouter);
 app.use("/login", loginRouter);
 app.use("/miPerfil", miPerfilRouter);
 app.use("/registracion", registracionRouter);
+app.use("/editarPerfil", editarPerfilRouter)
+app.use("/resultadoBusqueda", resultadoBusquedaRouter)
+
 
 
 
