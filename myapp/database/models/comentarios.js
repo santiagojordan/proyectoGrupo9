@@ -27,13 +27,11 @@ module.exports = function(sequelize, dataTypes) {
     Comentario.associate = function(models) {
         Comentario.hasMany(models.Posteo, {
         as: 'posteos',
-        foreignKey: 'idUsuario' // idUsuario es la misma foreignKey que tenes que
-        // poner en el modelo de Posteo
+        foreignKey: 'idUsuario'
       }),
         Comentario.hasMany(models.Usuario, {
         as: 'usuarios',
-        foreignKey: 'idUsuario' // idUsuario es la misma foreignKey que tenes que
-         //poner en el modelo de Comentario
+        foreignKey: 'idUsuario' 
       })
     };
   
