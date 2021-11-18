@@ -14,7 +14,7 @@ var detalleRouter = require('./routes/detalle');
 var loginRouter = require('./routes/login');
 var miPerfilRouter = require('./routes/miPerfil');
 var registracionRouter = require('./routes/registracion');
-var resultadosBusquedaRouter = require('./routes/resultadosBusqueda');
+var resultadosBusquedaRouter = require('./routes/resultadoBusqueda');
 
 
 

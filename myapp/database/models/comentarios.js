@@ -12,7 +12,7 @@ module.exports = function(sequelize, dataTypes) {
         type: dataTypes.STRING
       },
       fechaCreacion: {
-        type: dataTypes.DATETIME
+        type: dataTypes.DATE
       }
     };
   

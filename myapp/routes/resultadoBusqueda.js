@@ -5,7 +5,7 @@ const controller = require('../controllers/resultadoBusquedaController');
 
 
 router.get('/index', controller.index);
-router.get('/id/:id', controller.show);
+//router.get('/id/:id', controller.show);
 
 
 
