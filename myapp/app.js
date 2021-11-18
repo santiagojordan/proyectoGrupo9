@@ -3,18 +3,18 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const session = require('express-session');
+
+
 
 
 var indexRouter = require('./routes/index');
-var agregarPostRouter = require('./routes/agregarPost');
-var detallePostRouter = require('./routes/detallePost');
-var detalleUserRouter = require('./routes/detalleUser');
+var usuariosRouter = require('./routes/usuarios');
+var detalleRouter = require('./routes/detalle');
 var loginRouter = require('./routes/login');
 var miPerfilRouter = require('./routes/miPerfil');
 var registracionRouter = require('./routes/registracion');
-var editarPerfilRouter = require('./routes/editarPerfil')
-var resultadoBusquedaRouter = require('./routes/resultadoBusqueda')
-
+var resultadosBusquedaRouter = require('./routes/resultadosBusqueda');
 
 
 
@@ -30,19 +30,19 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+  secret: "Shh, es un secreto"
+}));
 
 
 
 app.use('/index', indexRouter);
-app.use('/detalleUser', detalleUserRouter);
-app.use("/agregarPost", agregarPostRouter);
-app.use("/detallePost", detallePostRouter);
-app.use("/detalleUser", detalleUserRouter);
-app.use("/login", loginRouter);
-app.use("/miPerfil", miPerfilRouter);
-app.use("/registracion", registracionRouter);
-app.use("/editarPerfil", editarPerfilRouter)
-app.use("/resultadoBusqueda", resultadoBusquedaRouter)
+app.use('/usuarios', usuariosRouter);
+app.use('/detalle', detalleRouter);
+app.use('/login', loginRouter);
+app.use('/miPerfil', miPerfilRouter);
+app.use('/registracion', registracionRouter);
+app.use('/resultadosBusqueda', resultadosBusquedaRouter);
 
 
 

@@ -1,13 +1,32 @@
-const dataPost = require ('../data/posteos')
-const dataUser = require ('../data/usuarios')
+const db = require('../database/models');
+const Op = db.Sequelize.Op;
+
+
 
 const miPerfilController = {
-    index: function(req, res, next) {
-        return res.render('miPerfil', {
-          posts: dataPost.list,
-          usuario: dataUser.list
-          });
-      }
-}
+        index: (req, res) => { 
+            db.User.findByPk(req.session.usuario.id,{
+            
+                include: [{
+                    association: 'posteosU'
+                }, {
+                    association: 'comentariosU'
+                }],
+                
+    
+                }).then(users => {
+                    
+                    res.render('miPerfil', {
+                        users: users
+                    });
+                })
+        },
+    edit: function (req, res) {
+        res.render ('editarPerfil')
+    }
+};
+
+
+
 
 module.exports = miPerfilController

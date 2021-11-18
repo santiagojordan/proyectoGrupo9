@@ -1,11 +1,12 @@
-const db = require('../database/models'); //relaciona controlador con modelos
+const db = require('../database/models');
 const registracion = db.Register;
 const Op = db.Sequelize.Op;
 const bcrypt = require('bcryptjs');
 
+
 const registracionController = {
     index: function (req, res) {
-        res.render ('register', {error: null})
+        res.render ('registracion', {error: null})
     },
 
     store: function(req, res){
@@ -24,7 +25,7 @@ const registracionController = {
             if (req.body.passwords.length >= 4) {
                 if (req.body.passwords == req.body.confirContra) {
                     if (req.file) {
-                        let passEncriptada = bcrypt.hashSync(req.body.passwords);
+                        
                         db.User.findOne({
                                 where: {
                                     username: req.body.usuario
@@ -37,7 +38,7 @@ const registracionController = {
                                         apellido: req.body.apellido,
                                         username: req.body.usuario,
                                         email: req.body.email,
-                                        passwords: passEncriptada,
+                                        passwords: bcrypt.hashSync(req.body.passwords, 10),
                                         picture: req.file.filename,
                                         fecha: req.body.fecha,
                                         
@@ -51,7 +52,7 @@ const registracionController = {
                                         res.redirect('/');
                                     });
                                 } else {
-                                    res.render('register', {
+                                    res.render('registracion', {
                                         error: 'Ya existe este nombre de usuario'
                                     })
                                 }
@@ -59,7 +60,7 @@ const registracionController = {
 
                     } else {
 
-                        let passEncriptada = bcrypt.hashSync(req.body.passwords);
+                        
                         db.User.findOne({
                                 where: {
                                     username: req.body.usuario
@@ -73,39 +74,39 @@ const registracionController = {
                                         email: req.body.email,
                                         nacimiento: req.body.fecha,
                                         username: req.body.usuario,
-                                        cover: 'fotodefault.jpeg',
-                                        passwords: passEncriptada,
+                                        cover: "../public/images/fUsuario/fhombre.jpg",
+                                        passwords: bcrypt.hashSync(req.body.passwords, 10),
                                     }).then(user => {
                                         req.session.usuario = user
                                         res.cookie('userId', user.id, {
                                             maxAge: 1000 * 60 * 5
                                         });
 
-                                        res.redirect('/');
+                                        res.redirect('/index');
                                     });
                                 } else {
-                                    res.render('register', {
-                                        error: 'Ya existe este nombre de usuario'
+                                    res.render('registracion', {
+                                        error: 'Nombre de usuario existente, elija otro por favor'
                                     })
                                 }
                             })
                     }
                 } else {
-                    res.render('register', {
-                        error: 'Las contraseñas no coinciden'
+                    res.render('registracion', {
+                        error: 'Sus contraseñas no coinciden'
                     })
                 }
             } else {
-                res.render('register', {
-                    error: 'La contraseña tiene que tener mas de tres caracteres'
+                res.render('registracion', {
+                    error: 'La contraseña debe contener mas de tres caracteres'
                 })
             }
         } else {
-            res.render('register', {
-                error: 'No puede haber campos vacios'
+            res.render('registracion', {
+                error: 'Ningun campo puede quedar vacio'
             })
         }
     }
 };
 
-module.exports = registerController
+module.exports = registracionController

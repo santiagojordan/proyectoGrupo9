@@ -1,7 +1,9 @@
-const db = require('../database/models'); //relaciona controlador con modelos
+const db = require('../database/models');
 const register = db.Register;
 const op = db.Sequelize.Op;
 const bcrypt = require('bcryptjs');
+
+
 
 const controller = {
     index: (req, res) => {
@@ -10,7 +12,7 @@ const controller = {
                 error: null
             })
         } else {
-            res.redirect('/')
+            res.redirect('/index')
         }
     },
     login: (req, res) => {
@@ -29,7 +31,7 @@ const controller = {
                                     maxAge: 1000 * 60 * 5
                                 });
                             }
-                            res.redirect('/')
+                            res.redirect('/index')
                         } else {
                             res.render('login', {
                                 error: 'La contraseña es incorrecta'
@@ -38,13 +40,13 @@ const controller = {
 
                     } else {
                         res.render('login', {
-                            error: 'El nombre de usuario es incorrecto'
+                            error: 'El usuario es incorrecto'
                         })
                     }
                 })
         } else {
             res.render('login', {
-                error: 'Ningun campo puede estar vacio'
+                error: 'Ningun campo puede quedar vacio'
             })
         }
 
