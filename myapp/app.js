@@ -5,9 +5,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const session = require('express-session');
 
-
-
-
 var indexRouter = require('./routes/index');
 var usuariosRouter = require('./routes/usuarios');
 var detalleRouter = require('./routes/detalle');
@@ -15,9 +12,6 @@ var loginRouter = require('./routes/login');
 var miPerfilRouter = require('./routes/miPerfil');
 var registracionRouter = require('./routes/registracion');
 var resultadosBusquedaRouter = require('./routes/resultadoBusqueda');
-
-
-
 
 var app = express();
 
@@ -43,8 +37,6 @@ app.use('/login', loginRouter);
 app.use('/miPerfil', miPerfilRouter);
 app.use('/registracion', registracionRouter);
 app.use('/resultadosBusqueda', resultadosBusquedaRouter);
-
-
 
 
 
